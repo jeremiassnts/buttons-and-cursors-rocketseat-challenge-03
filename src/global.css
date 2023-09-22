@@ -1,0 +1,20 @@
+:root {
+    --white: #FFFFFF;
+    --dark: #0B0911;
+    --purple-100: #c6c0d6;
+    --purple-300: #8257E5;
+    --purple-500: #4F456C;
+    --purple-800: #1C162C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--dark);
+    width: 100%;
+}

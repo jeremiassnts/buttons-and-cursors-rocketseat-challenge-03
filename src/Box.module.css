@@ -1,0 +1,81 @@
+.container {
+    background: var(--purple-800);
+    margin: 10vh auto;
+    max-width: 80vw;
+    border-radius: 5px;
+}
+
+.container header {
+    padding: 0.7rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.container header button {    
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+    color: var(--purple-100);
+    transition: background 0.2s, color 0.2s;
+}
+
+.container header button:hover, .active {
+    background: var(--purple-500)!important;
+    color: var(--white)!important;
+}
+
+.content {
+    padding: 0.7rem;
+    padding-top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.example, .options {
+    background: var(--dark);
+}
+
+.example {
+    width: 80%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options {
+    width: 19%;
+    color: var(--white);
+    font-size: 0.8rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.options div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.options svg {
+    cursor: pointer;
+    background: transparent;
+    transition: background 0.2s;
+}
+
+.options svg:hover {
+    cursor: pointer;
+    background: var(--purple-500);
+}
+
+.example button {
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+}
