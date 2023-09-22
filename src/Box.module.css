@@ -79,10 +79,19 @@
     padding: 1rem 1.5rem;
     border-radius: 20px;
     color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
 }
 
 .example button:focus {
     border: solid 1px var(--white);
+}
+
+.example button:disabled {
+    filter: brightness(0.5);
+    cursor: not-allowed;
 }
 
 .primary {
@@ -90,7 +99,7 @@
     transition: background 0.2s;
 }
 
-.primary:hover {
+.primary:hover:enabled {
     background: var(--purple-200);
 }
 
@@ -99,10 +108,32 @@
     transition: background 0.2s;
 }
 
-.secondary:hover {
+.secondary:hover:enabled {
     background: var(--gray-200);
 }
 
 .tertiary {
     background: transparent;
+}
+
+.loading{
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.buttonLoading {
+    cursor: progress;
+}
+
+.buttonMovable {
+    cursor: grab;
 }
