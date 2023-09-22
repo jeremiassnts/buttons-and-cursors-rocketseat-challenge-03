@@ -78,4 +78,31 @@
     border: none;
     padding: 1rem 1.5rem;
     border-radius: 20px;
+    color: var(--white);
+}
+
+.example button:focus {
+    border: solid 1px var(--white);
+}
+
+.primary {
+    background: var(--purple-300);
+    transition: background 0.2s;
+}
+
+.primary:hover {
+    background: var(--purple-200);
+}
+
+.secondary {
+    background: var(--gray-500);
+    transition: background 0.2s;
+}
+
+.secondary:hover {
+    background: var(--gray-200);
+}
+
+.tertiary {
+    background: transparent;
 }

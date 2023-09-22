@@ -1,17 +1,20 @@
 import { CheckSquare, Square } from 'phosphor-react'
 import styles from './Box.module.css'
+import { useState } from 'react'
 
 export function Box() {
+    const [buttonType, setButtonType] = useState('primary')
+
     return (
         <article className={styles.container}>
             <header>
-                <button className={styles.active}>BOTÃO PRIMÁRIO</button>
-                <button>BOTÃO SECUNDÁRIO</button>
-                <button>BOTÃO TERCIÁRIO</button>
+                <button onClick={() => setButtonType('primary')} className={[buttonType == 'primary' ? styles.active : {}]}>BOTÃO PRIMÁRIO</button>
+                <button onClick={() => setButtonType('secondary')} className={[buttonType == 'secondary' ? styles.active : {}]}>BOTÃO SECUNDÁRIO</button>
+                <button onClick={() => setButtonType('tertiary')} className={[buttonType == 'tertiary' ? styles.active : {}]}>BOTÃO TERCIÁRIO</button>
             </header>
             <div className={styles.content}>
                 <div className={styles.example}>
-                    <button>INTERAJA COMIGO</button>
+                    <button className={[styles[buttonType]]}>INTERAJA COMIGO</button>
                 </div>
                 <div className={styles.options}>
                     <div>

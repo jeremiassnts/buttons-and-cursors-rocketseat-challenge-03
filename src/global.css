@@ -2,9 +2,12 @@
     --white: #FFFFFF;
     --dark: #0B0911;
     --purple-100: #c6c0d6;
+    --purple-200: #9674E5;
     --purple-300: #8257E5;
     --purple-500: #4F456C;
     --purple-800: #1C162C;
+    --gray-500: #3C3748;
+    --gray-200: #6A617F;
 }
 
 * {
