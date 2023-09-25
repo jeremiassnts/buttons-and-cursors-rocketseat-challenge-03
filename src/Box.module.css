@@ -1,3 +1,21 @@
+@media (max-width: 768px){
+    .container {
+        max-width: 95vw!important;
+        margin-top: 5vh!important;
+    }
+
+    .content {
+        flex-direction: column!important;
+        gap: 0.75rem;
+    }
+
+    .example, .options {
+         width: 100%!important;
+         flex-direction: row!important;
+         justify-content: space-between;
+    }
+}
+
 .container {
     background: var(--purple-800);
     margin: 10vh auto;
